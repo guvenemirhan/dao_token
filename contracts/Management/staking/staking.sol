@@ -2,8 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "../judge/ERC20.sol";
 abstract contract Staking is ERC20 {
     uint8 private constant _NOT_ENTERED = 1;
     uint8 private constant _ENTERED = 2;
