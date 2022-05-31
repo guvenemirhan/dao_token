@@ -69,7 +69,7 @@ abstract contract Ballot is Staking{
     }
 
     function finishVoting() external {
-        require(block.timestamp>=endTime && isOpenedVote==0,"You can not");
+        require(block.timestamp>=endTime && isOpenedVote==1,"You can not");
         isOpenedVote=0;
     }
     
